@@ -41,11 +41,7 @@ class _BerandaState extends State<Beranda> {
                   ),
                 ),
                 const Spacer(),
-                const Icon(
-                  Icons.person,
-                  size: 28,
-                  color: Colors.lightBlue,
-                ),
+                const Icon(Icons.person, size: 28, color: Colors.lightBlue),
               ],
             ),
             const SizedBox(height: 10),
@@ -58,8 +54,7 @@ class _BerandaState extends State<Beranda> {
               style: TextStyle(color: Colors.blue, fontFamily: "Poppims"),
             ),
 
-            const SizedBox(height: 15
-            ),
+            const SizedBox(height: 15),
 
             // Foto LRT
             ClipRRect(

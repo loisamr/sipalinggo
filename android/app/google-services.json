@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1073848665992",
+    "project_id": "sipalinggo",
+    "storage_bucket": "sipalinggo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073848665992:android:d72857420b27b7561e9c3d",
+        "android_client_info": {
+          "package_name": "com.example.sipalinggo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNjFtMC3Rzp1F2M3dIL5pkwF7OMcHJH94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
