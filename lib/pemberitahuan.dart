@@ -55,9 +55,9 @@ class _BeritaState extends State<Berita> {
   final List<News> beritaList = [
     News(
       id: '1',
-      title: 'LRT Sumsel Tambah Jam Operasional',
+      title: 'Pojok Baca & Kantin Baru di Stasiun Bumi Sriwijaya Resmi Dibuka',
       content:
-          'Dinas perhubungan mengumumkan penambahan jam operasional LRT Sumatera Selatan mulai minggu ini. Penambahan ini dilakukan untuk mengakomodasi peningkatan penumpang pada jam sibuk.',
+          'Fasilitas penunjang penumpang berupa pojok baca dan kantin diresmikan.Fasilitas ini menambah kenyamanan penumpang; akses buka setiap hari selama jam operasional LRT.',
       imageUrl:
           'https://images.unsplash.com/photo-1526662095182-7f5f0e6a4d4d?auto=format&fit=crop&w=1600&q=80',
       category: 'Pengumuman',
@@ -65,9 +65,9 @@ class _BeritaState extends State<Berita> {
     ),
     News(
       id: '2',
-      title: 'Event LRT Expo 2025 di Jakabaring',
+      title: 'Kerjasama Promosi Wisata — Diskon Tiket untuk Pengunjung Event Jakabaring',
       content:
-          'Expo transportasi dan teknologi menghadirkan berbagai inovasi terkait Lintas Rel Terpadu. Pengunjung dapat melihat prototipe transportasi cerdas dan layanan informasi penumpang baru.',
+          'Kerjasama dengan Dinas Pariwisata memberi diskon tiket bagi pengunjung event tertentu.Diskon berlaku pada tanggal acara dengan menukarkan kode di aplikasi resmi LRT.',
       imageUrl:
           'https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=1600&q=80',
       category: 'Terbaru',
@@ -75,9 +75,9 @@ class _BeritaState extends State<Berita> {
     ),
     News(
       id: '3',
-      title: 'Rute Service Kendala Perawatan Malam',
+      title: 'HUT LRT Sumsel ke-7 — Perayaan & Laporan Kinerja Semester I',
       content:
-          'Saat ini beberapa rute mengalami penyesuaian sementara karena perawatan rel malam hari. Penumpang diminta memperhatikan pengumuman di stasiun dan aplikasi resmi LRT.',
+          'Peringatan operasi LRT sejak 2018; rilis data penumpang semester I. Pada ulang tahun, diadakan acara di Stasiun OPI Mall; rilis laporan menunjukkan peningkatan jumlah penumpang dan rencana pengembangan layanan.',
       imageUrl:
           'https://images.unsplash.com/photo-1518085250887-7cfe9b3e0b2c?auto=format&fit=crop&w=1600&q=80',
       category: 'Pengumuman',
@@ -85,9 +85,9 @@ class _BeritaState extends State<Berita> {
     ),
     News(
       id: '4',
-      title: 'Pembukaan Kantin Baru di Stasiun Bumi Sriwijaya',
+      title: 'Penyesuaian Tarif Khusus Bandara Saat Penerbangan Mendadak',
       content:
-          'Stasiun Bumi Sriwijaya kini memiliki kantin dan pojok baca untuk kenyamanan penumpang. Fasilitas ini menjadi bagian dari program peningkatan pelayanan.',
+          'Pengaturan tarif dan jadwal tambahan pada hari tertentu karena jadwal penerbangan padat. Informasi ditujukan kepada penumpang yang berangkat/pendatang melalui Bandara Sultan Mahmud Badaruddin II.',
       imageUrl:
           'https://images.unsplash.com/photo-1526318472351-c75fcf070ee3?auto=format&fit=crop&w=1600&q=80',
       category: 'Berita terbaru',
@@ -257,7 +257,7 @@ class _BeritaState extends State<Berita> {
                                         ),
                                         decoration: BoxDecoration(
                                           color: news.category == 'Pengumuman'
-                                              ? Colors.orange
+                                              ? const Color.fromARGB(255, 159, 252, 154)
                                               : Colors.red,
                                           borderRadius: BorderRadius.circular(12),
                                         ),

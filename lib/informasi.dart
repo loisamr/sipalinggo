@@ -66,9 +66,8 @@ class _InfoState extends State<Info> {
                 lokasi: "Jl.Gubenur H.Bastari no.1039,15 ulu, kec.sebrang ulu 1.",
                 status: "Operasional",
                 angkutanumum: "sepeda,gojek,maxim,grab",
-                destinasi: "Palembang Bird Park,open : 10.00 - 18.00, htm: Rp.50.000 ,800 m dari Stasiun Djka"
-                "Opi waterfun ,open : 08.00 - 18.00, htm: Rp.25.000 - Rp.40.000 ,800 m dari Stasiun Djka "
-                "Opi mall,open : 10.00 - 22.00, htm: Rp.3.000 - Rp.25.000 /jam, 500 m dari Stasiun Djka",
+                destinasi: "Jakabaring sport center,open : 05.00 - 18.00, htm: Rp.5.000 - Rp.25.000/kendaraan & Rp.2.000/orang,100 m dari Stasiun jakabaring"
+                "Masjid Cengho (lokasi: komplek.amin mulia,kel.15 ulu kec.sebrang ulu 1) ,open : 04.00 - 21.00, htm: Rp.2.000 - Rp.5.000 ,800 m dari Stasiun jakabaring "
               ),
               StationCard(
                 image: "assets/images/polres.png",
@@ -77,10 +76,9 @@ class _InfoState extends State<Info> {
                     "Toilet, Mushola, Ruang Tunggu, lift, escalator, kursi prioritas,ruang kesehatan,ruang menyusui,alat difabel",
                 lokasi: "Jl.Gub H bastari No 161, 8 ulu, kec. sebrang ulu 1",
                 status: "Operasional",
-                angkutanumum: "sepeda,gojek,maxim,grab",
-                destinasi: "Palembang Bird Park,open : 10.00 - 18.00, htm: Rp.50.000 ,800 m dari Stasiun Djka"
-                "Opi waterfun ,open : 08.00 - 18.00, htm: Rp.25.000 - Rp.40.000 ,800 m dari Stasiun Djka "
-                "Opi mall,open : 10.00 - 22.00, htm: Rp.3.000 - Rp.25.000 /jam, 500 m dari Stasiun Djka",
+                angkutanumum: "angkutan umum,feeder,gojek,maxim,grab",
+                destinasi: "Dekultur Cafe,open : 09.00 - 22.00,200 m dari Stasiun Polresta"
+                "Universitas UIN Raden Fatah ,open : 08.00 - 18.00,(Lokasi: jl.Prof.K.H Zainal Abidin Fikri)",
               ),
               StationCard(
                 image: "assets/images/ampera.png",
@@ -89,10 +87,11 @@ class _InfoState extends State<Info> {
                     "Toilet, Mushola, Ruang Tunggu, lift, Escalator, kursi prioritas,Ruang kesehatan,Ruang Menyususi,alat difabel,",
                 lokasi: "Jl.Sungai Kedukan,Rambutan,Banyuasin regency,kantin",
                 status: "Operasional",
-                angkutanumum: "sepeda,gojek,maxim,grab",
-                destinasi: "Palembang Bird Park,open : 10.00 - 18.00, htm: Rp.50.000 ,800 m dari Stasiun Djka"
-                "Opi waterfun ,open : 08.00 - 18.00, htm: Rp.25.000 - Rp.40.000 ,800 m dari Stasiun Djka "
-                "Opi mall,open : 10.00 - 22.00, htm: Rp.3.000 - Rp.25.000 /jam, 500 m dari Stasiun Djka",
+                angkutanumum: "Angkutan umum,bus kota,travel,gojek,maxim,grab",
+                destinasi: "Jembatan Ampera,100 m dari Stasiun Ampera"
+                "Benteng Kuto Besak ,open : 06.00 - 22.00, htm: Rp.5.000 - Rp.25.000 ,800 m dari Stasiun Ampera"
+                "Masjid Agung ,open: 24H, htm : Rp.3.000 - Rp.20.000, 500 m dari Stasiun Ampera"
+                "Monpera,open : 24H, 500 m dari Stasiun Ampera",
               ),
               StationCard(
                 image: "assets/images/cinde.png",
@@ -101,10 +100,9 @@ class _InfoState extends State<Info> {
                     "Toilet, Mushola, Ruang Tunggu, lift, Escalator,Pkursi prioritas,parkir Sepeda,Ruang Menyususi, kursi prioritas ",
                 lokasi: "Jl.17 ilir,kec.ilir timur 1,Kota Palembang.",
                 status: "Operasional",
-                angkutanumum: "sepeda,gojek,maxim,grab",
-                destinasi: "Palembang Bird Park,open : 10.00 - 18.00, htm: Rp.50.000 ,800 m dari Stasiun Djka"
-                "Opi waterfun ,open : 08.00 - 18.00, htm: Rp.25.000 - Rp.40.000 ,800 m dari Stasiun Djka "
-                "Opi mall,open : 10.00 - 22.00, htm: Rp.3.000 - Rp.25.000 /jam, 500 m dari Stasiun Djka",
+                angkutanumum: "angkutan umum,bus kota,gojek,maxim,grab",
+                destinasi: "Pasar cinde,open : 04.00 - 10.00 weekdays, 04.00 - 15.00 weekend,100 m dari Stasiun Cinde"
+                "International plaza, open : 09.00 - 24.00, htm : Rp.3.000 - Rp. 25.000, 700 m dari Stasiun Cinde"
               ),
               StationCard(
                 image: "assets/images/dishub.png",
@@ -113,32 +111,30 @@ class _InfoState extends State<Info> {
                     "Toilet, Mushola, Ruang Tunggu, lift, escalator, kursi prioritas,ruang kesehatan,ruang menyusui,alat difabel",
                 lokasi: "Jl.Kapten.A Rivai, Sungai pangeran Kec.Ilir timur 1",
                 status: "Operasional",
-                angkutanumum: "sepeda,gojek,maxim,grab",
-                destinasi: "Palembang Bird Park,open : 10.00 - 18.00, htm: Rp.50.000 ,800 m dari Stasiun Djka"
-                "Opi waterfun ,open : 08.00 - 18.00, htm: Rp.25.000 - Rp.40.000 ,800 m dari Stasiun Djka "
-                "Opi mall,open : 10.00 - 22.00, htm: Rp.3.000 - Rp.25.000 /jam, 500 m dari Stasiun Djka",
+                angkutanumum: "angkutan umum,gojek,maxim,grab",
+                destinasi: 
+                "Transmart Radial,open : 09.00 - 22.00, htm: Rp.3.000 - Rp.25.000 /jam, 700 m dari Stasiun Dishub"
+                "Pasar Pempek 26 ilir (lokasi : jl.Radial 26 ilir, kec.bukit kecil),open : 08.00 - 22.00, 1 km dari Stasiun Dishub",
               ),StationCard(
                 image: "assets/images/bumsri.png",
                 nama: "Stasiun Bumi sriwijaya",
                 fasilitas:
                     "Toilet, Mushola, Ruang Tunggu, lift, Escalator,kursi prioritas,Pojok Baca,Tenant,Ruang Menyususi.alat difabel,",
                 lokasi: "Jl.Angakatan 45, Lorok Pakjo, kec.Ilir barat 1",
-                status: "Operasional",angkutanumum: "sepeda,gojek,maxim,grab",
-                destinasi: "Palembang Bird Park,open : 10.00 - 18.00, htm: Rp.50.000 ,800 m dari Stasiun Djka"
-                "Opi waterfun ,open : 08.00 - 18.00, htm: Rp.25.000 - Rp.40.000 ,800 m dari Stasiun Djka "
-                "Opi mall,open : 10.00 - 22.00, htm: Rp.3.000 - Rp.25.000 /jam, 500 m dari Stasiun Djka",
+                status: "Operasional",
+                angkutanumum: "feeder,angkutan umum,gojek,maxim,grab",
+                destinasi: "Palembang Icon , open : 09.00 - 22.00, htm: Rp.3.000 - Rp.25.000 /jam,100 m dari Stasiun Bumi sriwijaya"
+                "Palembang Square, open : 10.00 - 22.00, htm: Rp.3.000 - Rp.25.000 /jam,400 m dari Stasiun Bumi sriwijaya",
               ),
               StationCard(
                 image: "assets/images/demang.png",
-                nama: "Stasiun Demang",
+                nama: " ",
                 fasilitas:
                     "Toilet, Mushola, Ruang Tunggu, lift, Escalatorkursi prioritas,Parkir Sepeda,Ruang Menyususi, kursi prioritas ",
                 lokasi: "Jl.Siring Agung, Ilir barat 1, Palembang.",
                 status: "Operasional",
-                angkutanumum: "sepeda,gojek,maxim,grab",
-                destinasi: "Palembang Bird Park,open : 10.00 - 18.00, htm: Rp.50.000 ,800 m dari Stasiun Djka"
-                "Opi waterfun ,open : 08.00 - 18.00, htm: Rp.25.000 - Rp.40.000 ,800 m dari Stasiun Djka "
-                "Opi mall,open : 10.00 - 22.00, htm: Rp.3.000 - Rp.25.000 /jam, 500 m dari Stasiun Djka",
+                angkutanumum: "Angkutan Umum,gojek,maxim,grab",
+                destinasi: "Hotel Amaris, Open: 24H, Start From Rp.400.000,800m dari Stasiun Demang ",
               ),
               StationCard(
                 image: "assets/images/gardem.png",
@@ -147,10 +143,9 @@ class _InfoState extends State<Info> {
                     "Toilet, Mushola, Ruang Tunggu, lift, escalator, kursi prioritas,ruang kesehatan,ruang menyusui,alat difabel",
                 lokasi: "Jl.Kolonel H.Barlian, ario kemuning, kec.kemuning.",
                 status: "Operasional",
-                angkutanumum: "sepeda,gojek,maxim,grab",
-                destinasi: "Palembang Bird Park,open : 10.00 - 18.00, htm: Rp.50.000 ,800 m dari Stasiun Djka"
-                "Opi waterfun ,open : 08.00 - 18.00, htm: Rp.25.000 - Rp.40.000 ,800 m dari Stasiun Djka "
-                "Opi mall,open : 10.00 - 22.00, htm: Rp.3.000 - Rp.25.000 /jam, 500 m dari Stasiun Djka",
+                angkutanumum: "angkutan umum,transmusi,gojek,maxim,grab",
+                destinasi: "RS.Bayangkara, Open : 24H, 400m dari Stasiun Garuda Dempo"
+                "Hotel Novotel,Open 24H , Start From Rp.1.450.000, 1km dari Stasiun Garuda Dempo",
               ),StationCard(
                 image: "assets/images/rsud.png",
                 nama: "Stasiun RSUD",
@@ -158,10 +153,8 @@ class _InfoState extends State<Info> {
                     "Toilet, Mushola, Ruang Tunggu, lift, Escalator,kursi prioritas, Ruang kesehatan,Ruang Menyususialat difabel,",
                 lokasi: "Jl.Kolonel H. Barlian,Sukabangun, kec.Sukarami.",
                 status: "Operasional",
-                angkutanumum: "sepeda,gojek,maxim,grab",
-                destinasi: "Palembang Bird Park,open : 10.00 - 18.00, htm: Rp.50.000 ,800 m dari Stasiun Djka"
-                "Opi waterfun ,open : 08.00 - 18.00, htm: Rp.25.000 - Rp.40.000 ,800 m dari Stasiun Djka "
-                "Opi mall,open : 10.00 - 22.00, htm: Rp.3.000 - Rp.25.000 /jam, 500 m dari Stasiun Djka",
+                angkutanumum: "Feeder,angkutan umum,Transmusi,gojek,maxim,grab",
+                destinasi: "RSUD Siti Fatimah, Open 24H, 100m dari Stasiun RSUD",
               ),
               StationCard(
                 image: "assets/images/punkay.png",
@@ -170,10 +163,9 @@ class _InfoState extends State<Info> {
                     "Toilet, Mushola, Ruang Tunggu, lift, Escalator,kursi prioritas,Ruang Menyususi kursi prioritas ",
                 lokasi: "Jl.Kolonel H. Barlian, No 69.Karya baru, kec.Sukaramai.",
                 status: "Operasional",
-                angkutanumum: "sepeda,gojek,maxim,grab",
-                destinasi: "Palembang Bird Park,open : 10.00 - 18.00, htm: Rp.50.000 ,800 m dari Stasiun Djka"
-                "Opi waterfun ,open : 08.00 - 18.00, htm: Rp.25.000 - Rp.40.000 ,800 m dari Stasiun Djka "
-                "Opi mall,open : 10.00 - 22.00, htm: Rp.3.000 - Rp.25.000 /jam, 500 m dari Stasiun Djka",
+                angkutanumum: "angkutan umum,transmusi,gojek,maxim,grab",
+                destinasi: "Punti Kayu Park,Open 08.00 - 18.00, htm: Rp. 20.000, 200m dari Stasiun Punti Kayu"
+                "Gramedia Store, open 08.00 - 22.00, 300m dari Stasiun Punti Kayu",
               ),
               StationCard(
                 image: "assets/images/asramahaji.png",
@@ -182,10 +174,8 @@ class _InfoState extends State<Info> {
                     "Toilet, Mushola, Ruang Tunggu, lift, escalator, kursi prioritas,ruang kesehatan,ruang menyusui,alat difabel",
                 lokasi: "Jl.Letjen Harun Sohar, Kebun Bunga,kec.Sukaramai.",
                 status: "Operasional",
-                angkutanumum: "sepeda,gojek,maxim,grab",
-                destinasi: "Palembang Bird Park,open : 10.00 - 18.00, htm: Rp.50.000 ,800 m dari Stasiun Djka"
-                "Opi waterfun ,open : 08.00 - 18.00, htm: Rp.25.000 - Rp.40.000 ,800 m dari Stasiun Djka "
-                "Opi mall,open : 10.00 - 22.00, htm: Rp.3.000 - Rp.25.000 /jam, 500 m dari Stasiun Djka",
+                angkutanumum: "Feeder,angkutan umum,gojek,maxim,grab",
+                destinasi: "Asrama Haji,Open : 05.00 - 20.00, htm Rp.3.000 - Rp. 20.000, 100m dari Stasiun Asrama Haji",
               ),
               StationCard(
                 image: "assets/images/bandara.png",
@@ -194,10 +184,8 @@ class _InfoState extends State<Info> {
                     "Toilet, Mushola, Ruang Tunggu, lift, escalator, kursi prioritas,ruang kesehatan,ruang menyusui,alat difabel",
                 lokasi: "Jl.Bandara Sultan Mahmud Badarudin II, Talang Betutu,kec. Sukaramai..",
                 status: "Operasional",
-                angkutanumum: "sepeda,gojek,maxim,grab",
-                destinasi: "Palembang Bird Park,open : 10.00 - 18.00, htm: Rp.50.000 ,800 m dari Stasiun Djka"
-                "Opi waterfun ,open : 08.00 - 18.00, htm: Rp.25.000 - Rp.40.000 ,800 m dari Stasiun Djka "
-                "Opi mall,open : 10.00 - 22.00, htm: Rp.3.000 - Rp.25.000 /jam, 500 m dari Stasiun Djka",
+                angkutanumum: "Bluebird,gojek,maxim,grab",
+                destinasi: " Hotel Santika Primiere,Open 24H , Start From Rp.2.000.000, 1km dari Stasiun Bandara",
               ),
             ],
           ),
