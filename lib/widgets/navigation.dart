@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sipalinggo/beranda.dart';
-import 'package:sipalinggo/berita.dart';
-import 'package:sipalinggo/info.dart';
+import 'package:sipalinggo/pemberitahuan.dart';
+import 'package:sipalinggo/informasi.dart';
 import 'package:sipalinggo/jadwal.dart';
 
 class Navigation extends StatefulWidget {

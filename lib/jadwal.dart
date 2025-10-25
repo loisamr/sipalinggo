@@ -33,7 +33,7 @@ class _JadwalState extends State<Jadwal> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Realtime Jadwal Kereta"),
+        title: const Text("Jadwal Kereta Real Time"),
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
       ),

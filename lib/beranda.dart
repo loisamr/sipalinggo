@@ -23,7 +23,7 @@ class _BerandaState extends State<Beranda> {
             Row(
               children: [
                 Text(
-                  "Selamat Malam,",
+                  "Selamat Malam,LRT zen",
                   style: const TextStyle(
                     fontFamily: "Poppins",
                     fontSize: 20,
@@ -31,17 +31,6 @@ class _BerandaState extends State<Beranda> {
                     color: Color.fromARGB(255, 8, 19, 240),
                   ),
                 ),
-                Text(
-                  "LRT zen",
-                  style: TextStyle(
-                    fontFamily: "Poppins",
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
-                    color: const Color.fromARGB(255, 252, 238, 146),
-                  ),
-                ),
-                const Spacer(),
-                const Icon(Icons.person, size: 28, color: Colors.lightBlue),
               ],
             ),
             const SizedBox(height: 10),
@@ -53,13 +42,11 @@ class _BerandaState extends State<Beranda> {
               "#PayoNaekLRT",
               style: TextStyle(color: Colors.blue, fontFamily: "Poppims"),
             ),
-
             const SizedBox(height: 15),
-
             // Foto LRT
             ClipRRect(
               borderRadius: BorderRadius.circular(12),
-              child: Image.asset("assets/images/lrtkereta.jpeg"),
+              child: Image.asset("assets/images/lrt1.png"),
             ),
 
             const SizedBox(height: 16),
@@ -70,13 +57,23 @@ class _BerandaState extends State<Beranda> {
               children: [
                 _menuButton(
                   icon: Icons.access_time,
-                  title: "Jadwal Real Time",
+                  title: "Jadwal kereta Real-Time",
                   subtitle: "Cek Jadwal Terkini",
                 ),
                 _menuButton(
                   icon: Icons.location_on,
-                  title: "Info Stasiun",
-                  subtitle: "Fasilitas & Wisata",
+                  title: "Detail Stasiun",
+                  subtitle: "Alamat & Fasilitas Stasiun",
+                ),
+                _menuButton(
+                  icon: Icons.location_on,
+                  title: "Detail Stasiun",
+                  subtitle: "Destinasi & Angkutan Stasiun",
+                ),
+                _menuButton(
+                  icon: Icons.location_on,
+                  title: "Pemberitahuan",
+                  subtitle: "Berita & Pengumuman Stasiun",
                 ),
               ],
             ),

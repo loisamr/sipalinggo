@@ -47,27 +47,105 @@ class _InfoState extends State<Info> {
 
               // List Card Stasiun
               StationCard(
-                image: "assets/images/kereta.jpeg",
-                nama: "Stasiun Jakabaring",
+                image: "assets/images/djka.png",
+                nama: "Stasiun DJKA",
                 fasilitas:
-                    "Toilet, Mushola, Ruang Tunggu, lift, escalator, Ruang menyusui",
-                lokasi: "Opi Mall, Ponpes Al-Fadh, RM.Sederhana",
+                    "Toilet, Mushola, Ruang Tunggu, lift, Ruang Menyususi,Escalator, Ruang kesehatan,alat difabel,",
+                lokasi: "Jl.Sungai Kedukan,Rambutan,Banyuasin regency,kantin",
                 status: "Operasional",
               ),
               StationCard(
-                image: "assets/images/lrtkereta.jpeg",
+                image: "assets/images/jakabaring.png",
                 nama: "Stasiun Jakabaring",
                 fasilitas:
-                    "Toilet, Mushola, Ruang Tunggu, lift, escalator, Ruang menyusui",
-                lokasi: "Opi Mall, Ponpes Al-Fadh, RM.Sederhana",
+                    "Toilet, Mushola, Ruang Tunggu, lift, Escalator,Ruang Menyususi,Parkir Sepeda, kursi prioritas ",
+                lokasi: "Jl.Gubenur H.Bastari no.1039,15 ulu, kec.sebrang ulu 1.",
                 status: "Operasional",
               ),
               StationCard(
-                image: "assets/images/kereta.jpeg",
-                nama: "Stasiun Jakabaring",
+                image: "assets/images/polres.png",
+                nama: "Stasiun Polresta",
                 fasilitas:
-                    "Toilet, Mushola, Ruang Tunggu, lift, escalator, Ruang menyusui",
-                lokasi: "Opi Mall, Ponpes Al-Fadh, RM.Sederhana",
+                    "Toilet, Mushola, Ruang Tunggu, lift, escalator, kursi prioritas,ruang kesehatan,ruang menyusui,alat difabel",
+                lokasi: "Jl.Gub H bastari No 161, 8 ulu, kec. sebrang ulu 1",
+                status: "Operasional",
+              ),
+              StationCard(
+                image: "assets/images/ampera.png",
+                nama: "Stasiun Ampera",
+                fasilitas:
+                    "Toilet, Mushola, Ruang Tunggu, lift, Escalator, kursi prioritas,Ruang kesehatan,Ruang Menyususi,alat difabel,",
+                lokasi: "Jl.Sungai Kedukan,Rambutan,Banyuasin regency,kantin",
+                status: "Operasional",
+              ),
+              StationCard(
+                image: "assets/images/cinde.png",
+                nama: "Stasiun Cinde",
+                fasilitas:
+                    "Toilet, Mushola, Ruang Tunggu, lift, Escalator,Pkursi prioritas,parkir Sepeda,Ruang Menyususi, kursi prioritas ",
+                lokasi: "Jl.17 ilir,kec.ilir timur 1,Kota Palembang.",
+                status: "Operasional",
+              ),
+              StationCard(
+                image: "assets/images/dishub.png",
+                nama: "Stasiun Dishub",
+                fasilitas:
+                    "Toilet, Mushola, Ruang Tunggu, lift, escalator, kursi prioritas,ruang kesehatan,ruang menyusui,alat difabel",
+                lokasi: "Jl.Kapten.A Rivai, Sungai pangeran Kec.Ilir timur 1",
+                status: "Operasional",
+              ),StationCard(
+                image: "assets/images/bumsri.png",
+                nama: "Stasiun Bumi sriwijaya",
+                fasilitas:
+                    "Toilet, Mushola, Ruang Tunggu, lift, Escalator,kursi prioritas,Pojok Baca,Tenant,Ruang Menyususi.alat difabel,",
+                lokasi: "Jl.Angakatan 45, Lorok Pakjo, kec.Ilir barat 1",
+                status: "Operasional",
+              ),
+              StationCard(
+                image: "assets/images/demang.png",
+                nama: "Stasiun Demang",
+                fasilitas:
+                    "Toilet, Mushola, Ruang Tunggu, lift, Escalatorkursi prioritas,Parkir Sepeda,Ruang Menyususi, kursi prioritas ",
+                lokasi: "Jl.Siring Agung, Ilir barat 1, Palembang.",
+                status: "Operasional",
+              ),
+              StationCard(
+                image: "assets/images/gardem.png",
+                nama: "Stasiun Garuda Dempo",
+                fasilitas:
+                    "Toilet, Mushola, Ruang Tunggu, lift, escalator, kursi prioritas,ruang kesehatan,ruang menyusui,alat difabel",
+                lokasi: "Jl.Kolonel H.Barlian, ario kemuning, kec.kemuning.",
+                status: "Operasional",
+              ),StationCard(
+                image: "assets/images/rsud.png",
+                nama: "Stasiun RSUD",
+                fasilitas:
+                    "Toilet, Mushola, Ruang Tunggu, lift, Escalator,kursi prioritas, Ruang kesehatan,Ruang Menyususialat difabel,",
+                lokasi: "Jl.Kolonel H. Barlian,Sukabangun, kec.Sukarami.",
+                status: "Operasional",
+              ),
+              StationCard(
+                image: "assets/images/punkay.png",
+                nama: "Stasiun Punti Kayu",
+                fasilitas:
+                    "Toilet, Mushola, Ruang Tunggu, lift, Escalator,kursi prioritas,Ruang Menyususi kursi prioritas ",
+                lokasi: "Jl.Kolonel H. Barlian, No 69.Karya baru, kec.Sukaramai.",
+                status: "Operasional",
+              ),
+              StationCard(
+                image: "assets/images/asramahaji.png",
+                nama: "Stasiun Asrama Haji",
+                fasilitas:
+                    "Toilet, Mushola, Ruang Tunggu, lift, escalator, kursi prioritas,ruang kesehatan,ruang menyusui,alat difabel",
+                lokasi: "Jl.Letjen Harun Sohar, Kebun Bunga,kec.Sukaramai.",
+                status: "Operasional",
+              ),
+              StationCard(
+                image: "assets/images/bandara.png",
+                nama: "Stasiun Bandara",
+                fasilitas:
+                    "Toilet, Mushola, Ruang Tunggu, lift, escalator, kursi prioritas,ruang kesehatan,ruang menyusui,alat difabel",
+                lokasi: "Jl.Bandara Sultan Mahmud Badarudin II, Talang Betutu,kec. Sukaramai..",
                 status: "Operasional",
               ),
             ],
