@@ -8,6 +8,8 @@ class Beranda extends StatefulWidget {
 }
 
 class _BerandaState extends State<Beranda> {
+  get stream => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -79,41 +81,69 @@ class _BerandaState extends State<Beranda> {
             ),
 
             const SizedBox(height: 20),
+        stream _service.getJadwalRealtime(),
+        builder: (context, snapshot) 
+          if (snapshot.hasError) {
+            return const Center(child: Text("Terjadi kesalahan memuat data"));
+          }
 
-            // Jadwal Terkini
-            Text(
-              "Jadwal Terkini",
-              style: TextStyle(
-                fontFamily: "Poppins",
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
-                color: Colors.blueGrey[800],
-              ),
-            ),
-            const SizedBox(height: 12),
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          }
 
-            _scheduleCard(
-              tujuan: "Djka - Bandara",
-              platform: "Platform 2",
-              waktu: "07.18",
-              status: "Tiba 2 menit",
-              statusColor: Colors.amber[200]!,
-            ),
+          final jadwals = snapshot.data ?? [];
 
-            const SizedBox(height: 10),
+          if (jadwals.isEmpty) {
+            return const Center(child: Text("Belum ada jadwal tersedia"));
+          }
 
-            _scheduleCard(
-              tujuan: "Bandara - Djka",
-              platform: "Platform 1",
-              waktu: "08.15",
-              status: "Berangkat",
-              statusColor: Colors.green[200]!,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
+          return ListView.builder(
+            itemCount: jadwals.length,
+            itemBuilder: (context, index) {
+              final jadwal = jadwals[index];
+              final status = TimeHelper.getStatus(jadwal.start, jadwal.end);
+
+              return Card(
+                margin: const EdgeInsets.all(10),
+                elevation: 4,
+                child: ExpansionTile(
+                  title: Text(
+                    jadwal.direction,
+                    style: const TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  subtitle: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("${jadwal.start} - ${jadwal.end}"),
+                      const SizedBox(height: 4),
+                      Text(
+                        "Status: $status",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: status == "Belum berangkat"
+                              ? Colors.blue
+                              : status == "Sedang dalam perjalanan"
+                              ? Colors.orange
+                              : Colors.green,
+                        ),
+                      ),
+                    ],
+                  ),
+                  children: jadwal.stasiun.map((stasiun) {
+                    return ListTile(
+                      leading: const Icon(Icons.train),
+                      title: Text(stasiun.nama),
+                      trailing: Text(stasiun.waktu),
+                    );
+                  }).toList(),
+                ),
+              );
+            },
+          );
+    ),
+    
+}
+
 
   // Widget Menu Button
   Widget _menuButton({
