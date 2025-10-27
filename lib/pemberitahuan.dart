@@ -26,17 +26,17 @@ class News {
   final String id;
   final String title;
   final String content;
-  final String imageUrl;
   final String category; // "Pengumuman" or "Terbaru" or others
   final DateTime date;
+  final String image;
 
   News({
     required this.id,
     required this.title,
     required this.content,
-    required this.imageUrl,
     required this.category,
     required this.date,
+    required this.image,
   });
 }
 
@@ -49,7 +49,7 @@ class Berita extends StatefulWidget {
 
 class _BeritaState extends State<Berita> {
   int selectedIndex = 0;
-  final List<String> tabs = [ "Pengumuman", "Terbaru"];
+  final List<String> tabs = ["Pengumuman", "Terbaru"];
 
   // Dummy sample data
   final List<News> beritaList = [
@@ -58,40 +58,37 @@ class _BeritaState extends State<Berita> {
       title: 'Pojok Baca & Kantin Baru di Stasiun Bumi Sriwijaya Resmi Dibuka',
       content:
           'Fasilitas penunjang penumpang berupa pojok baca dan kantin diresmikan.Fasilitas ini menambah kenyamanan penumpang; akses buka setiap hari selama jam operasional LRT.',
-      imageUrl:
-          'https://images.unsplash.com/photo-1526662095182-7f5f0e6a4d4d?auto=format&fit=crop&w=1600&q=80',
-      category: 'Pengumuman',
+    category: 'Pengumuman',
       date: DateTime.now().subtract(const Duration(days: 2)),
+      image: "assets/images/ftampera.webp",
     ),
     News(
       id: '2',
-      title: 'Kerjasama Promosi Wisata — Diskon Tiket untuk Pengunjung Event Jakabaring',
+      title:
+          'Kerjasama Promosi Wisata — Diskon Tiket untuk Pengunjung Event Jakabaring',
       content:
           'Kerjasama dengan Dinas Pariwisata memberi diskon tiket bagi pengunjung event tertentu.Diskon berlaku pada tanggal acara dengan menukarkan kode di aplikasi resmi LRT.',
-      imageUrl:
-          'https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=1600&q=80',
       category: 'Terbaru',
       date: DateTime.now().subtract(const Duration(days: 1)),
+      image: "assets/images/lrt1.png",
     ),
     News(
       id: '3',
       title: 'HUT LRT Sumsel ke-7 — Perayaan & Laporan Kinerja Semester I',
       content:
           'Peringatan operasi LRT sejak 2018; rilis data penumpang semester I. Pada ulang tahun, diadakan acara di Stasiun OPI Mall; rilis laporan menunjukkan peningkatan jumlah penumpang dan rencana pengembangan layanan.',
-      imageUrl:
-          'https://images.unsplash.com/photo-1518085250887-7cfe9b3e0b2c?auto=format&fit=crop&w=1600&q=80',
       category: 'Pengumuman',
       date: DateTime.now().subtract(const Duration(days: 5)),
+      image: "assets/images/ftampera.webp",
     ),
     News(
       id: '4',
       title: 'Penyesuaian Tarif Khusus Bandara Saat Penerbangan Mendadak',
       content:
           'Pengaturan tarif dan jadwal tambahan pada hari tertentu karena jadwal penerbangan padat. Informasi ditujukan kepada penumpang yang berangkat/pendatang melalui Bandara Sultan Mahmud Badaruddin II.',
-      imageUrl:
-          'https://images.unsplash.com/photo-1526318472351-c75fcf070ee3?auto=format&fit=crop&w=1600&q=80',
       category: 'Berita terbaru',
       date: DateTime.now().subtract(const Duration(hours: 10)),
+      image: "assets/images/lrt1.png",
     ),
   ];
 
@@ -104,14 +101,12 @@ class _BeritaState extends State<Berita> {
       return list;
     } else if (selectedIndex == 1) {
       // Pengumuman
-      final list =
-          beritaList.where((b) => b.category == 'Pengumuman').toList();
+      final list = beritaList.where((b) => b.category == 'Pengumuman').toList();
       list.sort((a, b) => b.date.compareTo(a.date));
       return list;
     } else {
       // Berita terbaru
-      final list =
-          beritaList.where((b) => b.category == 'Terbaru').toList();
+      final list = beritaList.where((b) => b.category == 'Terbaru').toList();
       // Berita terbaru juga diurutkan by date desc
       list.sort((a, b) => b.date.compareTo(a.date));
       return list;
@@ -233,17 +228,18 @@ class _BeritaState extends State<Berita> {
                                         child: Image.network(
                                           news.imageUrl,
                                           fit: BoxFit.cover,
-                                          errorBuilder: (context, error, stack) {
-                                            return Container(
-                                              color: Colors.grey[200],
-                                              alignment: Alignment.center,
-                                              child: const Icon(
-                                                Icons.broken_image,
-                                                size: 48,
-                                                color: Colors.grey,
-                                              ),
-                                            );
-                                          },
+                                          errorBuilder:
+                                              (context, error, stack) {
+                                                return Container(
+                                                  color: Colors.grey[200],
+                                                  alignment: Alignment.center,
+                                                  child: const Icon(
+                                                    Icons.broken_image,
+                                                    size: 48,
+                                                    color: Colors.grey,
+                                                  ),
+                                                );
+                                              },
                                         ),
                                       ),
                                     ),
@@ -257,9 +253,16 @@ class _BeritaState extends State<Berita> {
                                         ),
                                         decoration: BoxDecoration(
                                           color: news.category == 'Pengumuman'
-                                              ? const Color.fromARGB(255, 159, 252, 154)
+                                              ? const Color.fromARGB(
+                                                  255,
+                                                  159,
+                                                  252,
+                                                  154,
+                                                )
                                               : Colors.red,
-                                          borderRadius: BorderRadius.circular(12),
+                                          borderRadius: BorderRadius.circular(
+                                            12,
+                                          ),
                                         ),
                                         child: Text(
                                           news.category,
@@ -279,7 +282,8 @@ class _BeritaState extends State<Berita> {
                                 Padding(
                                   padding: const EdgeInsets.all(12),
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       Text(
                                         news.title,
@@ -318,7 +322,7 @@ class _BeritaState extends State<Berita> {
                                           const Icon(
                                             Icons.chevron_right,
                                             color: Colors.black26,
-                                          )
+                                          ),
                                         ],
                                       ),
                                     ],
@@ -408,7 +412,9 @@ class DetailBerita extends StatelessWidget {
                     children: [
                       Container(
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 10, vertical: 6),
+                          horizontal: 10,
+                          vertical: 6,
+                        ),
                         decoration: BoxDecoration(
                           color: news.category == 'Pengumuman'
                               ? Colors.orange.shade700
@@ -426,9 +432,7 @@ class DetailBerita extends StatelessWidget {
                       const SizedBox(width: 12),
                       Text(
                         formatDate(news.date),
-                        style: const TextStyle(
-                          color: Colors.black54,
-                        ),
+                        style: const TextStyle(color: Colors.black54),
                       ),
                     ],
                   ),
@@ -444,7 +448,7 @@ class DetailBerita extends StatelessWidget {
                   const SizedBox(height: 24),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

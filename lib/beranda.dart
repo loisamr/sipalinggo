@@ -80,9 +80,9 @@ class _BerandaState extends State<Beranda> {
 
             const SizedBox(height: 20),
 
-            // Jadwal Terdekat
+            // Jadwal Terkini
             Text(
-              "Jadwal Terdekat",
+              "Jadwal Terkini",
               style: TextStyle(
                 fontFamily: "Poppins",
                 fontSize: 16,
